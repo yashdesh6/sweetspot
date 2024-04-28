@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-const HeroAlert = ({ alertText }) => {
+const HeroAlert = ({ alertText, alertBg }) => {
 
   return (
-    <View className='bg-rose-950 p-4 rounded-3xl w-[90%]'>
+    <View className={`p-4 rounded-3xl w-[90%] ${alertBg}`}>
         <Text className='text-white'>{alertText}</Text>
     </View>
   );
